@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>AULA 3</title>
+</head>
+
+<body>
+	<script>
+		function pulaLinha() {
+			document.write("<br>");
+		}
+
+		alert("Isso é um exemplo em JS");
+
+		var ano = 2016;
+
+		document.write("Em " + ano + " essas eram as idades dos alunos: <br>")
+		document.write("Flávio tem " + (ano - 1977) + " anos.");
+		pulaLinha();
+		document.write("Joaquim tem " + (ano - 1996) + " anos.");
+		pulaLinha();
+		document.write("Barney tem " + (ano - 1968) + " anos.");
+		document.write("<br><br>")
+
+		ano = 2017;
+
+		document.write("Em " + ano + " essas eram as idades dos alunos: <br>")
+		document.write("Flávio tem " + (ano - 1977) + " anos.");
+		pulaLinha();
+		document.write("Joaquim tem " + (ano - 1996) + " anos.");
+		pulaLinha();
+		document.write("Barney tem " + (ano - 1968) + " anos.");
+		document.write("<br><br>");
+
+		ano = 2039;
+
+		document.write("Em " + ano + " essas serão as idades dos alunos: <br>")
+		document.write("Flávio tem " + (ano - 1977) + " anos.");
+		pulaLinha();
+		document.write("Joaquim tem " + (ano - 1996) + " anos.");
+		pulaLinha();
+		document.write("Barney tem " + (ano - 1968) + " anos.");
+		document.write("<br><br>");
+
+		var idadeFlavio = 62
+		var idadeJoaquim = 43
+		var idadeBarney = 71
+		var media = (idadeFlavio + idadeJoaquim + idadeBarney)/3
+		var nome = "Flávio"
+
+		document.write("Em 2039 a média das idades é " + Math.round(media))
+		pulaLinha();
+		document.write("<br>A idade de " + nome + " em 2039 é " + idadeFlavio + " anos.")
+
+	</script>
+</body>
+
+</html>

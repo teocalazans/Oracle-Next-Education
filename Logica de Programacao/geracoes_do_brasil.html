@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerações do Brasil</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            border: 2px solid black;
+            border-radius: 5px;
+        }
+        h1 {
+            color: blueviolet;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Gerações do Brasil</h1>
+    <script>
+        function pulaLinha() {
+            document.write("<br><br>");
+        }
+        function mostra (geracao) {
+            document.write(geracao);
+            pulaLinha();
+        }
+
+        var chegadaPortugueses = 1500
+        var anoAtual = 2022
+        var idadeMediaQuandoTemFilhos = 28
+        var media = (anoAtual - chegadaPortugueses)/idadeMediaQuandoTemFilhos
+
+        mostra("Desde a chegada dos portugueses ao Brasil em " + chegadaPortugueses + ".")
+        mostra("O Brasil teve uma média de " + Math.round(media) + " gerações.")
+        mostra("Levando em consideração o ano de " + anoAtual + ".")
+    </script>
+</body>
+</html>
