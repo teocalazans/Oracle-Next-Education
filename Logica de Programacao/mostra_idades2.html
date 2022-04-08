@@ -1,18 +1,43 @@
-<meta charset="UTF-8">
-<script>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+            border: 5px solid aquamarine;
+            border-radius: 5px;
+            font-size: 20px;
+            text-align: center;
+            width: 600px;
+            height: 400px;
+            margin-left: auto;
+            margin-right: auto;
+        }
 
-function pulaLinha() {
-    document.write("<br><hr><br>");
-}
+        h1 {
+            color: blue;
+            padding: 20px;
+        }
+    </style>
+</head>
 
-function mostra(frase) {
-    document.write(frase);
-    pulaLinha();
-}
+<body>
+    <h1>Quais as idades dos meninos?</h1>
+    <script>
 
-var ano = 2019;
-mostra("<big>Eu nasci em : " + (ano - 25) + "</big>");
-mostra("<big>Adriano nasceu em : " + (ano - 26) + "</big>");
-mostra("<big>Paulo nasceu em : " + (ano - 32) + "</big>");
+        function pulaLinha() {
+            document.write("<br><hr><br>");
+        }
 
-</script>
+        function mostra(frase) {
+            document.write("<b>" + frase + "</b>");
+            pulaLinha();
+        }
+
+        var ano = 2019;
+        mostra("<big>Eu nasci em : " + (ano - 25) + "</big>");
+        mostra("<big>Adriano nasceu em : " + (ano - 26) + "</big>");
+        mostra("<big>Paulo nasceu em : " + (ano - 32) + "</big>");
+
+    </script>
+</body>

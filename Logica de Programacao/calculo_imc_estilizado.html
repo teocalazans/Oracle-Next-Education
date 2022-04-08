@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+    <title>Calculando IMC</title>
+    <style>
+        body {
+            font-family: "Open Sans", sans-serif;
+            background-color: #d8dddd;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        header h2 {
+            font-style: italic;
+        }
+
+        header h1 {
+            word-spacing: 5px;
+        }
+
+        .descricaoinput {
+            font-style: italic;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .inputs {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            border: 5px solid black;
+            border-radius: 10px;
+            background-color: #bad3dc;
+            margin-left: 300px;
+            margin-right: 300px;
+            height: 300px;
+
+        }
+
+        main div input {
+            width: 300px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .botao {
+            color: white;
+            background-color: black;
+            border-style: none;
+            width: 100px;
+            height: 30px;
+            border-radius: 20px;
+        }
+
+        .final {
+            margin-top: 5px;
+            text-align: center;
+            border: 5px solid black;
+            border-radius: 10px;
+            margin-left: 300px;
+            margin-right: 300px;
+            height: auto;
+            background-color: #bad3dc;
+        }
+
+        .rodape {
+            background-color: black;
+            color: white;
+            position: absolute;
+            bottom: 0;
+            height: 30px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .text-rodape {
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Você sabe qual o seu IMC?</h1>
+        <h2>Descubra abaixo</h2>
+    </header>
+    <main>
+        <div class="inputs">
+            <label class="descricaoinput" for="pesocliente">Informe Seu Peso:</label><br>
+            <input type="number" id="ps" size="2"><br>
+            <label class="descricaoinput" for="alturacliente">Informe Sua Altura:</label><br>
+            <input type="number" id="alt"><br>
+            <button class="botao" type="submit" onclick="calculaImc(ps, alt)">Calcular</button>
+        </div>
+        <div class="final">
+            <h2>Resultado: <h2 id="resultado"></h2></h2>
+        </div>
+    </main>
+    <footer class="rodape">
+        <h3 class="text-rodape">Desenvolvido por Teo Calazans</h3>
+    </footer>
+    <script>
+        function calculaImc(peso, altura) {
+            var pesoInformado = document.getElementById("ps").value;
+            var ps = pesoInformado
+            var alturaInformada = document.getElementById("alt").value
+            var alt = alturaInformada
+            var imc = pesoInformado / (alturaInformada * alturaInformada);
+            var resultadoFinal = document.getElementById("resultado")
+
+            var resultado = "O seu IMC calculado é " + Math.round(imc);
+            resultadoFinal.innerHTML = resultado;
+            console.log(imc)
+        }
+    </script>
+</body>
+
+</html>

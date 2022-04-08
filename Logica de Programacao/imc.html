@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculando IMC</title>
+</head>
+
+<body>
+    <script>
+        function pulaLinha() {
+            document.write("<br>");
+            document.write("<br>");
+        }
+
+        function mostra(info) {
+            document.write(info)
+            pulaLinha();
+        }
+        function calculaImc(peso, altura) {
+           /* var imc = peso / (altura * altura);
+             mostra("O IMC calculado de " + nome + " é " + Math.round(imc));
+             return imc; */
+           return peso / (altura * altura);
+        }
+
+        /*calculaImc(89, 1.75);
+          calculaImc(75, 1.71);
+        var imcTeo = calculaImc(89, 1.75);
+        var imcAlisson = calculaImc(75, 1.71);
+        var imcTotal = imcTeo + imcAlisson
+        mostra(imcTeo);
+        mostra(imcAlisson); */
+        var imcTotal = calculaImc(89, 1.75) + calculaImc(75, 1.71);
+        document.write("A soma dos imc's é um total de " + Math.round(imcTotal));
+
+
+    </script>
+</body>
+
+</html>
