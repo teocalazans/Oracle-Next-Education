@@ -15,6 +15,7 @@
             background-color: #d8dddd;
             margin-left: auto;
             margin-right: auto;
+            
         }
 
         header {
@@ -48,7 +49,7 @@
             background-color: #bad3dc;
             margin-left: 300px;
             margin-right: 300px;
-            height: 300px;
+            height: 230px;
 
         }
 
@@ -83,7 +84,7 @@
             color: white;
             position: absolute;
             bottom: 0;
-            height: 30px;
+            height: 100% 30px;
             width: 100%;
             text-align: center;
         }
@@ -97,7 +98,7 @@
 <body>
     <header>
         <h1>Você sabe qual o seu IMC?</h1>
-        <h2>Descubra abaixo</h2>
+        <h2>Não? Descubra abaixo:</h2>
     </header>
     <main>
         <div class="inputs">
@@ -126,7 +127,12 @@
             var resultado = "O seu IMC calculado é " + Math.round(imc);
             resultadoFinal.innerHTML = resultado;
             console.log(imc)
+
+            document.getElementById("ps").value = "";
+            document.getElementById("alt").value = "";
+            document.querySelector("input").focus();
         }
+       
     </script>
 </body>
 
