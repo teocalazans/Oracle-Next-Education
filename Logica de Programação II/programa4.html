@@ -18,11 +18,11 @@
         pincel.fillStyle = 'grey';
         pincel.fillRect(0, 0, 600, 400);
         var desenha = false
-        
-        tela.onmousemove = function(evento) {
+
+        tela.onmousemove = function (evento) {
             var input = document.querySelector('input');
             var cor = input.value;
-            
+
             if (desenha) {
                 var x = evento.pageX - tela.offsetLeft;
                 var y = evento.pageY - tela.offsetTop
@@ -33,13 +33,13 @@
             }
             console.log(x + ', ' + y);
 
-            } 
-        
-        tela.onmousedown = function() {
+        }
+
+        tela.onmousedown = function () {
             desenha = true
         }
 
-        tela.onmouseup = function() {
+        tela.onmouseup = function () {
             desenha = false
         }
 
