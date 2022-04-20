@@ -1,0 +1,134 @@
+header {
+    background-color: #bbbbbb;
+    padding: 20px 0;
+    height: 120px;
+}
+
+.box-header {
+   position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.generic-logo {
+    margin-left: 40px;
+    width: auto;
+    height: 120px;
+}
+
+.navigation {
+    position: absolute;
+    top: 50px;
+    right: 0;
+}
+.navigation li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+.navigation a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.navigation a:hover {
+    color: #aa0000;
+    text-decoration: underline;
+}
+
+.navigation a:active {
+    color: #fff000;
+}
+
+#banner {
+    width: 100%;
+    border-top: 10px solid #000;
+    border-bottom: 10px solid #aa0000;
+}
+
+.main-about {
+    padding: 30px;
+    border-bottom: 10px solid  #aa0000;
+} 
+
+.about-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+p {
+    text-align: center;
+    font-size: 22px;
+  }
+
+  #paragra {
+    font-size: 20px;
+}
+
+em strong {
+    color: #aa0000;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.beneficios {
+    display: flex;
+    justify-content: space-around;
+    background-color: #bbbbbb;
+    padding: 20px;
+    border-bottom: 10px solid #aa0000;
+}
+
+.list-square {
+    width: 400px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
+
+.list {
+    font-style: italic;
+    padding-bottom: 20px;
+    
+}
+
+.benefits-title {
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.beneficios ul {
+    font-size: 20px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.banner-benefits{
+    width: 50%;
+
+}
+
+footer {
+    text-align: center;
+    background: url("../img/backg.jpg");
+    padding: 20px 0 ;
+}
+.copyright {
+    color: white;
+    font-size: 13px;
+    margin-top: 10px;
+
+}
+
+
+
+

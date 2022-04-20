@@ -6,6 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 
@@ -14,10 +19,9 @@
 
 <body>
     <header>
-        <div class="box-header">
-            <img class="generic-logo" src="img/logo2.png" alt="Logo da barbaria">
-            <!--<h1 class="main-title">Barbearia Teolão</h1> -->
-            <nav class="navigation">
+        <div class="caixa">
+            <h1><img src="img/logo.png" alt="Logo da Barbearia"></h1>
+            <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="produtos.html">Produtos</a></li>
@@ -27,46 +31,63 @@
         </div>
     </header>
 
+    <img class="banner" src="img/banner.jpg" alt="Imagem da Barbearia">
+
     <main>
-        <img id="banner" src="img/banner.jpg" alt="Imagem da Barbearia">
-        <div class="main-about">
-            <h2 class="about-title">Sobre Barbearia Teolão</h2>
-            <p>Localizada no coração da cidade a <strong>Brabearia Teolão</strong> traz para o mercado o que há de
-                melhor
-                para o
-                seu cabelo e barba. Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos
-                clientes a
-                cada
-                dia.</p>
-            <p id="paragra"><br><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos
-                        clientes"</strong>.</em></p>
-            <p><br>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui
-                padrão de
-                excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
+        <div class="section-one">
+            <section class="main-about">
+                <h2 class="main-title">Sobre Barbearia Teolão</h2>
+                <img class="utensilios" src="img/utensilios.jpg" alt="Utensilios de um barbeiro">
+                <p>Localizada no coração da cidade a <strong>Brabearia Teolão</strong> traz para o mercado o que há de
+                    melhor
+                    para o
+                    seu cabelo e barba. Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos
+                    clientes a
+                    cada
+                    dia.</p>
+                <p><br><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos
+                            clientes"</strong>.</em></p>
+                <p><br>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento
+                    possui
+                    padrão de
+                    excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
+            </section>
         </div>
-
-        <div class="beneficios">
-        <div class="list-square">
-            <h3 class="benefits-title">Benefícios</h3>
-            <ul>
-                <li class="list">Atendimento aos clientes</li>
-                <li class="list">Espaço diferenciado</li>
-                <li class="list">Lolização Privilegiada</li>
-                <li class="list">Profissionais Qualificados</li>
-                <li class="list">Ambiente Climatizado</li>
-                <li class="list">Quiosque de bebidas</li>
-                <li class="list">Play Ground</li>
-            </ul>
-        </div>
-            <img class="banner-benefits" src="img/beneficios.jpg" alt="Imagem do corpo da ">
-        </div>
+        <section class="map">
+            <h3 class="main-title">Nosso estabelecimento</h3>
+            <p>Nosso estabelecimento está localizado no coração da cidade.</p>
+            <div class="map-content">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6537.917792334653!2d-38.52205829783859!3d-13.00576700152641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7160379108013cb%3A0x4bae66cbdb92151f!2sShopping%20Barra!5e0!3m2!1spt-BR!2sbr!4v1650483132954!5m2!1spt-BR!2sbr"
+                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+        <section class="list-square">
+            <h3 class="main-title">Benefícios</h3>
+            <div class="benefits-content">
+                <ul class="benefits-list">
+                    <li class="list">Atendimento aos clientes</li>
+                    <li class="list">Espaço diferenciado</li>
+                    <li class="list">Lolização Privilegiada</li>
+                    <li class="list">Profissionais Qualificados</li>
+                    <li class="list">Ambiente Climatizado</li>
+                    <li class="list">Quiosque de bebidas</li>
+                    <li class="list">Play Ground</li>
+                </ul><img class="banner-benefits" src="img/beneficios.jpg" alt="Imagem do corpo da ">
+            </div>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/BklCtAkcA1g"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </section>
     </main>
-
     <footer>
         <img src="img/logo-branco.png" alt="">
         <p class="copyright">&copy; Copyright Barbearia Teolão - 2022</p>
     </footer>
-
 </body>
 
 </html>
